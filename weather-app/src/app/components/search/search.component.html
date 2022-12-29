@@ -1,0 +1,21 @@
+<form #form="ngForm" (submit)="onSubmit()">
+  <div class="form-group">
+    <img src="../assets/images/3731894.png" height="58px" alt="" />
+    <!-- <input
+      type="text"
+      name="coutnryCode"
+      id="countryCode"
+      [(ngModel)]="countryCode"
+    /> -->
+    <input
+      class="form-control"
+      type="search"
+      name="cityName"
+      [formControl]="cityName"
+      placeholder="Please input a name of city"
+    />
+  </div>
+  <button mat-button matPrefix mat-icon-button>
+    <mat-icon>search</mat-icon>
+  </button>
+</form>
