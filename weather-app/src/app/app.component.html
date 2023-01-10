@@ -63,7 +63,7 @@
   <div class="row" *ngIf="currentWeather">
     <div class="col current-weather-data">
       <div class="col" id="cityName" [class.dark-class]="isDark">
-        {{ currentWeather.name }}
+        <p>{{ currentWeather.name }}</p>
       </div>
       <p class="current" id="current-time">
         {{ weatherData.list["0"].dt_txt | date : "fullDate" }}

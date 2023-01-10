@@ -1,3 +1,5 @@
+@import "./styles/mixins.scss";
+
 .container {
   background: linear-gradient(to right, rgb(180, 214, 244), rgb(250, 255, 255));
   height: 100vh;
@@ -25,6 +27,9 @@
     z-index: 1;
     .col-form {
       padding: 0 10rem;
+      @include tablet {
+        padding: 0 2rem;
+      }
     }
   }
   form {
@@ -120,8 +125,8 @@
 .backColor-cold {
   background: linear-gradient(
     to right bottom,
-    rgb(105, 163, 213) 40%,
-    rgb(87, 205, 205)
+    rgb(4, 52, 95) 40%,
+    rgb(1, 74, 74)
   );
 }
 .backColor-normal {
@@ -151,7 +156,12 @@
   width: 100%;
   text-align: center;
   font-size: 10rem;
-  opacity: 0.1;
+  opacity: 0.2;
   font-family: fantasy;
   letter-spacing: 20px;
+
+  @include tablet {
+    font-size: 7rem;
+    letter-spacing: 10px;
+  }
 }

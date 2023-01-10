@@ -66,6 +66,7 @@ export class AppComponent implements OnInit {
         ];
       }
     }
+
     return this.averageWithin(this.days);
   }
 
